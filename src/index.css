@@ -1,0 +1,142 @@
+:root {
+  --primary-color: #2563eb;        /* Professional blue */
+  --secondary-color: #1e40af;      /* Darker blue */
+  --accent-color: #06b6d4;         /* Teal accent */
+  --text-dark: #1f2937;            /* Dark gray */
+  --text-light: #6b7280;           /* Medium gray */
+  --text-lighter: #9ca3af;         /* Light gray */
+  --bg-light: #f9fafb;             /* Very light gray */
+  --bg-white: #ffffff;             /* Pure white */
+  --border-color: #e5e7eb;         /* Light border */
+  --shadow: rgba(0, 0, 0, 0.1);   /* Subtle shadow */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--text-dark);
+  background-color: var(--bg-white);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--text-dark);
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+p {
+  color: var(--text-light);
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  color: var(--secondary-color);
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+button:hover, .btn:hover, a:hover, .social-link:hover, .nav-menu button:hover {
+  transform: translateY(-1px);
+}
+
+/* Custom cursor for interactive elements */
+.btn:hover, .social-link:hover, .nav-menu button:hover {
+  box-shadow: 0 4px 12px var(--shadow);
+}
+
+/* Enhanced Cursor Styling */
+* {
+  cursor: default;
+}
+
+button, .btn, a, .social-link, .project-card, .skill-card, .info-card, .nav-link {
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+button:hover, .btn:hover, a:hover, .social-link:hover, .project-card:hover, .skill-card:hover, .info-card:hover, .nav-link:hover {
+  cursor: pointer;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-light);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--secondary-color);
+}
+
+/* Selection */
+::selection {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+}
